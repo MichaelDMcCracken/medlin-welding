@@ -127,7 +127,7 @@ ul {
         }
     
         .nav-logo img {
-            /* height: 50px; */
+            height: 150px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -138,7 +138,7 @@ ul {
         }
     
         .contact-btn button {
-            font-size: 1rem;
+            font-size: 1.2rem;
             padding: 1rem 3rem;
             margin: 0;
             font-weight: 700;
@@ -164,11 +164,11 @@ ul {
     
         ul li {
             display: inline-flex;
-            padding: 0rem 1rem;
+            padding: 0rem 1.2rem;
             align-items: center;
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 1.5rem;
             color: #292727;
             flex-wrap: wrap;
         }
@@ -181,16 +181,34 @@ ul {
             flex-wrap: wrap;
         }
 
-        .hero-text h1 {
-            font-size: 3rem;
+        /* .hero-text h1 {
+            font-size: 4rem;
         }
 
         .hero-text p {
             font-size: 1.5rem;
-        }
+        } */
 
         .hero-image {
             background-position: top;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            /* transform: translate(-50%, -50%); */
+            color: #fff;
+        }
+        .promo {
+            text-align: center;
+            padding: 0.4rem;
+            background: linear-gradient(129deg, #ed202e 0%, #8e161e 100%);
+            color: #fff;
+            font-family: 'Sofia Sans', sans-serif;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
         }
 }
 
