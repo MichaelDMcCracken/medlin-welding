@@ -114,7 +114,7 @@ ul {
 }
 
 /* Responsive navigation menu (for mobile devices) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .topnav-container {
             padding-left: 1rem;
             padding-right: 1rem;
