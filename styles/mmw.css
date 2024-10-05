@@ -26,6 +26,7 @@ p {
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 350;
     margin: 0;
+    font-size: 1.25rem;
 }
 
 .review-bubble h3 {
@@ -56,6 +57,7 @@ a {
     margin-right: auto;
     padding: 1rem;
     font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -215,14 +217,15 @@ ul {
     background-color: #f2f2f2;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 0.5rem 1rem;
+    margin: 0rem 1rem;
     width: 20rem;
+    margin-bottom: 1rem;
 }
 
 .service-title {
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .service-desc {
@@ -230,6 +233,7 @@ ul {
     font-family: 'Sofia Sans', sans-serif;
     font-weight: 350;
     align-items: center;
+    font-size: 1.25rem;
 }
 
 .service-bubble i {
@@ -238,11 +242,60 @@ ul {
 
 .service-bubble img {
     height: 3rem;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
+}
+
+.our-work {
+    max-width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-images img {
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    box-shadow: #ccc 0px 2px 20px 0px;
+}
+
+.arrows {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: #292727;
+}
+
+.hoverred:hover {
+    color: #ed202e;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slide-text {
+    margin-top: 1rem;
+    padding: 1rem;
+    /* background: linear-gradient(160deg, #ed202e 0%, #8e161e 100%); */
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    /* box-shadow: #efefef 0px 5px 10px 0px; */
+    color: #292727;
+}
+
+.slide-text p {
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 1000px) {
+    .our-work {
+        max-width: 85%;
+    }
+
     .topnav-container {
             padding-left: 1rem;
             padding-right: 1rem;
@@ -359,6 +412,10 @@ ul {
 
         #contact-us {
             display: none;
+        }
+
+        .service-bubble {
+            margin-bottom: 1rem;
         }
 }
 

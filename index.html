@@ -42,7 +42,7 @@
                 <h1>High Quality Welds at Affordable Prices.</h1>
                 <p>Whether at your place or ours, we've got all your welding needs covered.</p>
                 <div class="contact-btn" id="quote-btn">
-                    <a href="contact.html"><button type="button">Get a Quote <i class="fi fi-rr-angle-circle-right"></i></button></a>
+                    <a href="#contact-us"><button type="button">Get a Quote <i class="fi fi-rr-angle-circle-right"></i></button></a>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
                     Metal Sales
                 </div>
                 <div class="service-desc">
-                    Medlin Welding is now selling metal. Products can be available for pick-up or delivery.
+                    Medlin Welding is now selling metal. Products can be available for pick-up or delivery. Call for current inventory.
                 </div>
             </div>
             <div class="service-bubble">
@@ -83,6 +83,43 @@
     <hr>
     <div class="our-work" id="our-work">
         <h1>Our Work</h1>
+        <p>From trailer and dumpster repair to custom metal fabrication, our expertise spans across various areas. We take pride in
+        our certification and proficiency in MIG, TIG, and Stick Welding. Our adaptability ensures that we can cater to your
+        unique welding requirements with ease and deliver exceptional results.</p>
+        <div class="work-images mySlides">
+            <img src="./images/work/01.jpg">
+            <div class="slide-text">
+                <p>Trailer Beds</p>
+            </div>
+        </div>
+        <div class="work-images mySlides">
+            <img src="./images/work/02.jpg">
+            <div class="slide-text">
+                <p>Custom Dog Boxes</p>
+            </div>
+        </div>
+        <div class="work-images mySlides">
+            <img src="./images/work/03.jpg">
+            <div class="slide-text">
+                <p>Custom Truck Hitches</p>
+            </div>
+        </div>
+        <div class="work-images mySlides">
+            <img src="./images/work/04.jpg">
+            <div class="slide-text">
+                <p>Emergency Excavator Track Repair</p>
+            </div>
+        </div>
+        <div class="work-images mySlides">
+            <img src="./images/work/05.jpg">
+            <div class="slide-text">
+                <p>Grill and Smoker Repair</p>
+            </div>
+        </div>
+        <div class="arrows">
+            <a onclick="plusSlides(-1)" class="prev"><i class="fi fi-sr-angle-circle-left hoverred"></i></a>
+            <a onclick="plusSlides(-1)" class="next"><i class="fi fi-sr-angle-circle-right hoverred"></i></a>
+        </div>
     </div>
     <hr>
     <div class="about" id="about">
@@ -100,8 +137,13 @@
             <h3>Chris Morton</h3>
             <h4>Facebook</h4>
         </div>
+    </div>
+    <hr>
+    <div class="contact-us" id="contact">
+        <h1>Contact Us</h1>
         
     </div>
+    
     <footer>
         <img src="./images/mmw-navlogo.png" id="footer-logo">
         <div class="footer-links">
@@ -121,6 +163,29 @@
         </div>
     </footer>
     
-    
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
 </body>
 </html>
