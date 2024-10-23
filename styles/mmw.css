@@ -278,17 +278,13 @@ ul {
 
 .slide-text {
     margin-top: 1rem;
-    padding: 1rem;
-    /* background: linear-gradient(160deg, #ed202e 0%, #8e161e 100%); */
-    background-color: #f2f2f2;
+    padding: 1rem;background-color: #f2f2f2;
     border-radius: 1rem;
-    /* box-shadow: #efefef 0px 5px 10px 0px; */
     color: #292727;
 }
 
 .slide-text p {
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: 400;
 }
 
 .bio {
@@ -310,13 +306,76 @@ ul {
 
 .bio-text p {
     text-align: left;
-    align-self:center;
+    align-self: center;
+}
+
+.bio-text h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+.bio-text h4 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #999;
+    font-weight: 400;
+}
+
+.contact-flex {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-item h2 {
+    text-align: left;
+    /* margin: 0; */
+}
+
+.contact-item p {
+    text-align: left;
+    /* margin-bottom: 1rem; */
+}
+
+.contact-item a {
+    color: #8e161e;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: #292727;
+}
+
+.contact-avenues {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.avenue {
+    text-align: left;
 }
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 1000px) {
     .our-work {
         max-width: 85%;
+    }
+
+    .contact-item h2 {
+        text-align: left;
+    }
+
+    .contact-item p {
+        text-align: left;
     }
 
     .topnav-container {
@@ -462,6 +521,14 @@ ul {
 
     .bio-text p {
         text-align: justify;
+    }
+
+    .bio-text h3 {
+        text-align: center;
+    }
+
+    .bio-text h4 {
+        text-align: center;
     }
 }
 
