@@ -78,6 +78,7 @@ footer {
 
 .footer-social {
     font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .footer-social i:hover {
@@ -290,6 +291,28 @@ ul {
     letter-spacing: 1px;
 }
 
+.bio {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-pic img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bio-text p {
+    text-align: left;
+    align-self:center;
+}
+
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 1000px) {
     .our-work {
@@ -297,126 +320,149 @@ ul {
     }
 
     .topnav-container {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            padding-top: 1rem;
-            padding-bottom: 0;
-            display: block;
-            text-align: center;
-        }
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+        display: block;
+        text-align: center;
+    }
 
-        footer {
-            padding: 1rem 1rem;
-            text-align: center;
-        }
+    footer {
+        padding: 1rem 1rem;
+        text-align: center;
+    }
 
-        .footer-links ul li {
-            font-size: .7rem;
-            font-weight: 400;
-        }
-    
-        .nav-logo img {
-            height: 100px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .footer-links ul li {
+        font-size: .65rem;
+        font-weight: 400;
+    }
 
-        #quote-btn {
-            /* display: block; */
-            margin-top: auto;
-        }
-    
-        .contact-btn {
-            display: block;
-            text-align: center;
-        }
-    
-        .contact-btn button {
-            font-size: 1rem;
-            padding: 1rem 3rem;
-            margin: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #fff;
-            border: none;
-            /* border-radius: 0.5rem; */
-            background-color: #ed202e;
-        }
-    
-        .contact-btn button:hover {
-            background-color: #292727;
-        }
-    
-        ul li a {
-            text-decoration: none;
-            color: #292727;
-        }
-    
-        ul li a:visited {
-            color: #292727;
-        }
-    
-        ul li {
-            display: inline-flex;
-            padding: 0rem 1.2rem;
-            align-items: center;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 1rem;
-            color: #292727;
-            flex-wrap: wrap;
-        }
-    
-        ul {
-            list-style-type: none;
-            height: fit-content;
-            display: inline-flex;
-            flex-wrap: wrap;
-        }
+    .nav-logo img {
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        .hero-image {
-            background-position: top;
-            height: 250px;
-        }
+    #quote-btn {
+        /* display: block; */
+        margin-top: auto;
+    }
 
-        .hero-text h1 {
-            font-size: 2rem;
-            margin: 0;
-            padding: 0 2rem;
-        }
+    .contact-btn {
+        display: block;
+        text-align: center;
+    }
 
-        .hero-text p {
-            font-family: 'Sofia Sans', sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            margin: 0;
-        }
-        
-        .hero-text {
-            text-align: center;
-            position: relative;
-            /* top: 50%; */
-            /* transform: translate(-50%, -50%); */
-            color: #fff;
-        }
-        .promo {
-            text-align: center;
-            padding: 0.4rem;
-            background: linear-gradient(129deg, #ed202e 0%, #8e161e 100%);
-            color: #fff;
-            font-family: 'Sofia Sans', sans-serif;
-            font-weight: 300;
-            letter-spacing: 1px;
-            font-size: 1rem;
-        }
+    .contact-btn button {
+        font-size: 1rem;
+        padding: 1rem 3rem;
+        margin: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        border: none;
+        /* border-radius: 0.5rem; */
+        background-color: #ed202e;
+    }
 
-        #contact-us {
-            display: none;
-        }
+    .contact-btn button:hover {
+        background-color: #292727;
+    }
 
-        .service-bubble {
-            margin-bottom: 1rem;
-        }
+    ul li a {
+        text-decoration: none;
+        color: #292727;
+    }
+
+    ul li a:visited {
+        color: #292727;
+    }
+
+    ul li {
+        display: inline-flex;
+        padding: 0rem 1.1rem;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #292727;
+        flex-wrap: wrap;
+    }
+
+    ul {
+        list-style-type: none;
+        height: fit-content;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        background-position: top;
+        height: 250px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0 2rem;
+    }
+
+    .hero-text p {
+        font-family: 'Sofia Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+        position: relative;
+        /* top: 50%; */
+        /* transform: translate(-50%, -50%); */
+        color: #fff;
+    }
+    .promo {
+        text-align: center;
+        padding: 0.4rem;
+        background: linear-gradient(129deg, #ed202e 0%, #8e161e 100%);
+        color: #fff;
+        font-family: 'Sofia Sans', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+
+    #contact-us {
+        display: none;
+    }
+
+    .service-bubble {
+        margin-bottom: 1rem;
+    }
+
+    .bio {
+        display: flex;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1rem;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .bio-pic img {
+        border-radius: 2rem;
+        min-width: 250px;
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .bio-text p {
+        text-align: justify;
+    }
 }
 
 body {
