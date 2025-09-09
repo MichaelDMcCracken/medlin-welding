@@ -3,6 +3,13 @@
     text-align: center;
 }
 
+.container {
+    background-image: url("../images/mmw-banner.jpg");
+    background-size: cover;
+    height: 500px;
+    background-position: right;
+}
+
 .topnav-container {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -138,17 +145,12 @@ footer {
 
 ul li a {
     text-decoration: none;
-    color: #292727;
+    color: #FFF;
 }
 
 ul li a:visited {
-    color: #292727;
+    color: #FFF;
 }
-
-ul li a:hover {
-    color: #ed202e;
-}
-
 ul li {
     display: inline;
     padding: 1rem 1.5rem;
@@ -182,8 +184,8 @@ ul {
 
 .hero-image{
     display: flex;
-    height: 500px;
-    background-image: url("../images/mmw-banner.jpg");
+    height: 380px;
+    /* background-image: url("../images/mmw-banner.jpg"); */
     background-position: right;
     background-size: cover;
     align-items: center;
@@ -435,7 +437,7 @@ ul {
     }
 
     ul li a:visited {
-        color: #292727;
+        color: #aaa;
     }
 
     ul li {
@@ -535,4 +537,77 @@ ul {
 body {
     margin: 0;
     padding: 0;
+}
+
+.metal-nav {
+    height: 130px;
+}
+
+.table-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Ensure the table's layout is fixed (so columns maintain their set width) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Collapsing borders between cells */
+    table-layout: fixed;
+    /* Fixed column widths */
+    margin-top: 20px;
+}
+
+/* Style the table header */
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    word-wrap: break-word;
+    /* Enable word wrapping */
+}
+
+/* Column specific widths */
+th:nth-child(1),
+td:nth-child(1) {
+    width: 25%;
+    /* Adjust to desired width */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 20%;
+    /* Adjust to desired width */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 20%;
+    /* Adjust to desired width */
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 20%;
+    /* Adjust to desired width */
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 15%;
+    /* Adjust to desired width */
+}
+
+/* Ensure price column has bold text */
+td.price {
+    font-weight: bold;
+}
+
+/* Handle wrapping long words */
+td {
+    word-wrap: break-word;
+    /* Breaks words that are too long */
+    overflow-wrap: break-word;
+    /* Newer standard for word breaking */
 }

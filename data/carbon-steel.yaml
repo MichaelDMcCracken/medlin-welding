@@ -1,0 +1,49 @@
+name: "Stainless Steel"
+categories:
+  - name: "Sheet / Plate"
+    products:
+      - name: "Cold Rolled Sheet (A-1008)"
+        thickness: "10, 11, 12, 14, 16, 18, 20, 22, 24"
+        width: "36, 48, 60 (in)"
+        length: "96, 120"
+        price: "$20"
+      - name: "Hot Rolled Sheet/Plate (A-1001)"
+        thickness: "10, 11, 12, 14, 16, 18, 20, 22, 24"
+        width: "36, 48, 60"
+        length: "96, 120"
+        price: "$500"
+      - name: "Hot Rolled Sheet (A-36)"
+        thickness: "10, 11, 12, 14, 16, 18, 20, 22, 24"
+        width: "36, 48, 60"
+        length: "96, 120"
+        price: "$30"
+      - name: "Hot Rolled Sheet (A572-50)"
+        thickness: "10, 11, 12, 14, 16, 18, 20, 22, 24"
+        width: "36, 48, 60"
+        length: "96, 120"
+        price: "$30"
+      - name: "Hot Rolled Pickled & Oiled Sheet (A-569)"
+        thickness: "11, 12, 14, 16"
+        width: "48"
+        length: "96"
+        price: "$45"
+      - name: "Diamond Floor Hot Rolled Tread Plate (A-786)"
+        thickness: 12ga, 14ga, 1/8, 3/16, 1/4, 3/8, 1/2
+        width: 48, 60, 72
+        length: 96, 120, 144
+        price: $100
+      - name: Galvanized Tread Plate
+        thickness: 
+  - name: "Flat Bars / Strips"
+    products:
+      - name: "Cold Finished Flat Bar (C-1018)"
+        thickness: "1/8, 3/16, 1/4, 3/8, 1/2, 5/8, 3/4, 1, 1-1/4, 1-1/2, 2"
+        width: "3/8, 1/2, 5/8, 3/4, 1, 1-1/4, 1-1/2, 2, 2-1/4, 2-1/2, 3, 3-1/2, 4, 5, 6, 8, 12"
+        length: "3000mm"
+        price: "$1200"
+      - name: "Stainless Steel Flat Bar 2"
+        thickness: "5mm"
+        width: "1200mm"
+        length: "4000mm"
+        price: "$1400"
+      
