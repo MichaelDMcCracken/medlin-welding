@@ -1,61 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Medlin Mobile Welding</title>
+    <meta name="description" content="SMAW-certified mobile and drop-off welding, repairs, and metal sales in Louisburg, North Carolina. Call Medlin Welding for a quote.">
     <link rel="stylesheet" href="./styles/mmw.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
-    <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
-        rel="stylesheet">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="tel:+19194972262" style="text-decoration: none;">
+    <a class="promo-link" href="tel:+19194972262">
     <div class="promo">
-        Call Now for Current Deals! <i class="fi fi-sr-sack-dollar"></i><i class="fi fi-sr-sack-dollar"></i><i class="fi fi-sr-sack-dollar"></i>
+        Call Now for Current Deals
     </div></a>
-    <!-- <div class="topnav-container">
-        <div class="nav-logo"><img src="./images/mmw-navlogo.png"></div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#our-work">Our Work</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
-        </div>
-        <div class="contact-btn" id="contact-us">
-            <a href="#contact"><button type="button">Contact Us</button></a>
-        </div>
-    </div> -->
     <div class="container">
         <div class="topnav-container">
-                <div class="nav-logo"><img src="./images/mmw-navlogo.png"></div>
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#our-work">Our Work</a></li>
-                        <li><a href="#about">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="contact-btn" id="contact-us">
-                    <a href="#contact"><button type="button">Contact Us</button></a>
-                </div>
+            <div class="nav-logo"><img src="./images/mmw-navlogo.png" alt="Medlin Mobile Welding"></div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-controls="nav-links" aria-expanded="false">Menu</button>
+            <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#our-work">Our Work</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-btn" id="contact-us">
+                <a class="button" href="#contact">Contact Us</a>
             </div>
+        </div>
         <div class="hero-image">
             <div class="hero-text">
                 <h1>Strong, Reliable Welds at Affordable Prices</h1>
                 <p>Mobile or drop-off service—welding solutions wherever you need them.</p>
                 <div class="contact-btn" id="quote-btn">
-                    <a href="#contact"><button type="button">Get a Quote <i class="fi fi-rr-angle-circle-right"></i></button></a>
+                    <a class="button" href="#contact">Get a Quote</a>
                 </div>
             </div>
         </div>
@@ -64,8 +44,7 @@
         <h1>Our Services</h1>
         <div class="services">
             <div class="service-bubble">
-                <img src="./images/welding.png">
-                <!-- <i class="fi fi-sr-select"></i> -->
+                <div class="service-kicker">Repair &amp; Fabrication</div>
                 <div class="service-title">
                     Welding
                 </div>
@@ -74,7 +53,7 @@
                 </div>
             </div>
             <div class="service-bubble">
-                <i class="fi fi-sr-cart-shopping-fast"></i>
+                <div class="service-kicker">Materials &amp; Supply</div>
                 <div class="service-title">
                     Metal Sales
                 </div>
@@ -83,7 +62,7 @@
                 </div>
             </div>
             <div class="service-bubble">
-                <i class="fi fi-ss-truck-arrow-right"></i>
+                <div class="service-kicker">On-site Service</div>
                 <div class="service-title">
                     Mobile-Equipped
                 </div>
@@ -102,7 +81,7 @@
         large-scale build, we approach each project with the same level of care and craftsmanship. Our goal is not only to meet
         expectations but to exceed them with quality work built to last.</p>
         <div class="work-images mySlides">
-            <img src="./images/work/01.jpg">
+            <img src="./images/work/01.jpg" alt="Trailer with a newly replaced metal floor">
             <div class="slide-text">
                 <p>One of my recent projects was to replace the bottom of this old Hardee Trailer. The before and after is like night and
                 day. All he needs now is a cost of paint and it will look good as new!
@@ -110,21 +89,21 @@
             </div>
         </div>
         <div class="work-images mySlides">
-            <img src="./images/work/02.jpg">
+            <img src="./images/work/02.jpg" alt="Custom dog box welding project">
             <div class="slide-text">
                 <p>Do you need repairs on your dog boxes this season? Or are you interested in having a custom dog box fabricated? Give us
                 a call or send us a message!</p>
             </div>
         </div>
         <div class="work-images mySlides">
-            <img src="./images/work/03.jpg">
+            <img src="./images/work/03.jpg" alt="Farm truck modified for towing">
             <div class="slide-text">
                 <p>A recent project completed was enhancing this farm truck to meet the customers towing needs. Do you have a project and
                 need welding? Call us for an estimate!</p>
             </div>
         </div>
         <div class="work-images mySlides">
-            <img src="./images/work/04.jpg">
+            <img src="./images/work/04.jpg" alt="Excavator track pin repair">
             <div class="slide-text">
                 <p>This week mobile welding took me to Pittsboro to weld an excavator track pin that broke. Bee Legend Grading needed an
                 emergency fix to finish their job. After a full days work doing county maintenance I headed over to Pittsboro and got
@@ -132,7 +111,7 @@
             </div>
         </div>
         <div class="work-images mySlides">
-            <img src="./images/work/05.jpg">
+            <img src="./images/work/05.jpg" alt="Restored pig cooker with a repaired metal base">
             <div class="slide-text">
                 <p>This pig cooker was sitting out in the rain for years and was never used. The bottom of the grill was completed rusted
                 out and would flake off at single touch. We welded up 11 gauge sheet metal to the existing grill where the grill still
@@ -140,8 +119,8 @@
             </div>
         </div>
         <div class="arrows">
-            <a onclick="plusSlides(-1)" class="prev"><i class="fi fi-sr-angle-circle-left hoverred"></i></a>
-            <a onclick="plusSlides(-1)" class="next"><i class="fi fi-sr-angle-circle-right hoverred"></i></a>
+            <button type="button" onclick="plusSlides(-1)" class="slide-control prev" aria-label="Previous project">Previous</button>
+            <button type="button" onclick="plusSlides(1)" class="slide-control next" aria-label="Next project">Next</button>
         </div>
     </div>
     <hr>
@@ -149,7 +128,7 @@
         <h1>About Us</h1>
         <div class="bio">
             <div class="bio-pic">
-                <img src="./images/addison.jpg">
+                <img src="./images/addison.jpg" alt="Addison Medlin">
             </div>
             <div class="bio-text">
                 <h3>Addison Medlin</h3>
@@ -166,7 +145,6 @@
     <hr>
     <div class="reviews" id="reviews">
         <h1>Customer Reviews</h1>
-        <i class="fi fi-sr-feedback" style="font-size: 3rem;"></i>
         <div class="review-bubble">
             <p>
             "Addison did an amazing job fixing a mirror of ours. Really nice, decent, down to Earth guy. I would highly recommend him
@@ -189,26 +167,19 @@
             <div class="contact-item">
                 <h2>Medlin Welding, LLC</h2>
                 <div class="contact-avenues">
-                    <div>
-                        <i class="fi fi-sr-land-layer-location"></i>
-                    </div>
                     <div class="avenue">
                         <p>111 Foster Lane<br>Louisburg, NC 27549</p>
                     </div>
                 </div>
                 <div class="contact-avenues">
                     <div class="avenue">
-                        <i class="fi fi-sr-phone-call"></i>
-                    </div>
-                    <div class="avenue">
-                        <p>(919) 497-2262</p>
+                        <p><a href="tel:+19194972262">(919) 497-2262</a></p>
                     </div>
                 </div>
                 <div class="contact-avenues">
-                    <div>
-                        <i class="fi fi-sr-envelope"></i>
+                    <div class="avenue">
+                        <p><a href="mailto:medlinweldingllc@gmail.com">medlinweldingllc@gmail.com</a></p>
                     </div>
-                    <p><a href="mailto:medlinweldingllc@gmail.com">medlinweldingllc@gmail.com</a></p>
                 </div>
 
             </div>
@@ -217,7 +188,7 @@
     </div>
     
     <footer>
-        <img src="./images/mmw-navlogo.png" id="footer-logo">
+        <img src="./images/mmw-navlogo.png" id="footer-logo" alt="Medlin Mobile Welding">
         <div class="footer-links">
             <ul>
                 <li><a href="#services">Services</a></li>
@@ -227,36 +198,31 @@
             </ul>
         </div>
         <div class="footer-social">
-            <a href="https://www.facebook.com/medlinwelding" target="_blank"><i class="fi fi-brands-facebook"></i></a>
-            <a href="" target="_blank"><i class="fi fi-brands-facebook-messenger"></i></a>
+            <a href="https://www.facebook.com/medlinwelding" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
         <div class="copyright">
             © 2024 Medlin Mobile Welding | Website by Michael M<span style="text-transform: lowercase;">c</span>Cracken
         </div>
     </footer>
     
+<script src="./nav.js"></script>
 <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("mySlides");
+    showSlides();
 
     function plusSlides(n) {
-        showSlides(slideIndex += n);
+        slideIndex = (slideIndex + n + slides.length) % slides.length;
+        showSlides();
     }
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+        if (slides.length) {
+            slides[slideIndex].style.display = "block";
+        }
     }
 </script>
 </body>

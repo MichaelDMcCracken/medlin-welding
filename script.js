@@ -118,11 +118,11 @@ function generateCategoryProducts(data, containerId) {
         category.products.forEach(product => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${product.name}</td>
-                <td>${product.thickness}</td>
-                <td>${product.width}</td>
-                <td>${product.length}</td>
-                <td class="price">${product.price}</td>
+                <td data-label="Product">${product.name}</td>
+                <td data-label="Thickness">${product.thickness}</td>
+                <td data-label="Width">${product.width}</td>
+                <td data-label="Length">${product.length}</td>
+                <td class="price" data-label="Price">${product.price}</td>
             `;
             tableBody.appendChild(row);
         });

@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/mmw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
     <title>Carbon Steel Products</title>
 </head>
 
-<body>
+<body class="products-page">
     <div class="container metal-nav">
         <div class="topnav-container">
-            <div class="nav-logo"><img src="./images/mmw-navlogo.png"></div>
-            <div class="nav-links">
+            <div class="nav-logo"><a href="./index.html"><img src="./images/mmw-navlogo.png" alt="Medlin Mobile Welding home"></a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-controls="nav-links" aria-expanded="false">Menu</button>
+            <nav class="nav-links" id="nav-links" aria-label="Main navigation">
                 <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#our-work">Our Work</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./index.html#our-work">Our Work</a></li>
+                    <li><a href="./index.html#about">About Us</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="contact-btn" id="contact-us">
-                <a href="#contact"><button type="button">Contact Us</button></a>
+                <a class="button" href="./index.html#contact">Contact Us</a>
             </div>
         </div>
     </div>
@@ -35,6 +39,7 @@
 
     <!-- Link to the external JS file -->
     <script src="script.js"></script>
+    <script src="./nav.js"></script>
 </body>
 
 </html>
